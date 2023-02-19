@@ -1,0 +1,49 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "MJ",
+      "email": "mjvirus@gmail.com",
+      "website": "typicode"
+    },
+    {
+      "name": "Deepak Ravidas",
+      "email": "deepakravidas565@gmail.com",
+      "website": "mjvirus.netlify.app",
+      "id": 2
+    },
+    {
+      "name": "mj",
+      "email": "mj@gmil.com",
+      "website": "1234",
+      "id": 3
+    },
+    {
+      "name": "mj",
+      "email": "vkkjbj@",
+      "website": "nmbbmn",
+      "id": 4
+    },
+    {
+      "name": "rahul",
+      "email": "kjjbf@",
+      "website": "nmcdmnvb",
+      "id": 5
+    },
+    {
+      "name": "deepakravidas565@gmail.com",
+      "email": "deepakravidas565@gmail.com",
+      "website": "deepakravidas565@gmail.com",
+      "id": 6
+    }
+  ],
+  "signin": [
+    {}
+  ],
+  "signup": {
+    "name": "mj",
+    "email": "deepakravidas565@gmail.com",
+    "phone": "9162895792",
+    "password": "mjmj"
+  }
+}

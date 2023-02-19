@@ -1,0 +1,39 @@
+1. Create Button for edit and handle a function with name 
+   or whatever parameter you want when click this button...!
+   <button 
+      onClick={() => Edit(i.name)} className='btn btn-warning'>Edit
+   </button>
+
+2. Console name for check its working or not or navigate in form page with name parameter.
+   function Edit(name){
+     console.log(name)
+     navigate('/form/'+name)
+   }
+
+   But first you have paas this parameter in Form route router, which is available in App.js
+   <Route path='/form/:name' element={<Form/>} />
+
+3. In Form.js use useParam hook to use name parameter which you pased in From route
+   useParam alows access to route parameter.
+   = const {name} = useParams();
+
+4. And call API(url):- 
+   // Edit purpose {
+const {name} = useParams();
+
+if(name){
+  fetch('http://localhost:3000/user')
+  .then((res) => {
+    return res.json();
+  }).then((resp) => {
+    
+    let result = resp.find((c) => c.name === name)
+    if(result){
+      setD(result)
+    }
+  })
+}
+
+// }
+
+
