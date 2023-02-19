@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom';
 
 function Signup() {
 const navigate = useNavigate()
+useEffect(() =>{
+  sessionStorage.clear();
+},[])
     const [data,setData] = useState({});
 
     function clickForSignup(){

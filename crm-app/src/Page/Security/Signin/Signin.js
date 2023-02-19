@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 function Signin() {
   const navigate = useNavigate()
+  useEffect(() =>{
+    sessionStorage.clear();
+  },[])
+  
   const [name ,setName] = useState();
   const [password ,setPassword] = useState();
 
@@ -53,6 +57,8 @@ function Signin() {
     }
     return result;
   }
+
+  
   return (
     <div>
         <div className="container">
